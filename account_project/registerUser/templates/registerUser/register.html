@@ -1,0 +1,20 @@
+{%extends "hello/base.html"%}
+
+{%block title%} Create new account {%endblock%}
+{% load crispy_forms_tags %}
+{% block content %}
+    {% if user.is_authenticated %}
+    <h2> Register an Account</h2>
+    <form method="POST" class="form-group">
+        {%csrf_token%}
+        {{form|crispy}}
+        <button type="submit">Register</button>
+
+
+    </form>
+
+    {% else %}
+    <h3>Please <a href = "/">Login</a> First to be able to register </h3>
+    {% endif %}
+    
+{%endblock%}
