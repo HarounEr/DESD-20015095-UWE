@@ -1,6 +1,18 @@
 # DESD-20015095-UWE
 Creating a web application using django for UWEFLIX assigment, DESD.
 
+### Posibilies of this project
+
+* Account manager can login.
+* Account manager can logout.
+* Account manager can create a new account for a new Account manager.
+* Account manager can view all clubs.
+* Account manager can add new club.
+* Account manager can view all club reprentatives.
+* Account manager can add new club representative
+* Account manager can update club representative details.
+* Account manager can delete club representative account.
+
 ## To start the project in your computer:
 
 You need to first have docker installed.
