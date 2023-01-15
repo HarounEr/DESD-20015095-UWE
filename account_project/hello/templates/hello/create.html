@@ -1,0 +1,25 @@
+{%extends 'hello/base.html'%}
+
+{%block title%} <h1>Adding New Club </h1> {%endblock%}
+
+
+{% load crispy_forms_tags %}
+{%block content%}
+{% if user.is_authenticated %}
+<h1>Adding New Club </h1>
+<br/>
+<form method = "post", name = "/create">
+    {%csrf_token%}
+    {{form|crispy}}
+
+    </p>
+    <button type="submit", name="save">Create New Club</button>
+
+
+    </form>
+
+{% else %}
+<h3>Please <a href = "/">Login</a> First to be able to register </h3>
+{% endif %}
+
+{%endblock%}

@@ -1,0 +1,19 @@
+{% extends "hello/base.html" %}
+
+{% block title %}
+
+view rep
+
+{%endblock%}
+
+<br/>
+{% block content %}
+{% if user.is_authenticated %}
+<strong><h2>{{ club }}</h2></strong><br/>
+    
+
+{% else %}
+<h3>Please <a href = "/">Login</a> First to be able to register </h3>
+{% endif %}
+
+{%endblock%}
