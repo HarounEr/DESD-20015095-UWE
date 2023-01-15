@@ -14,7 +14,7 @@ in the terminal type:
 
 * docker build -t [choose Name for the container]:1.0 .
 
-* docker run -p 8000:8000 [whatever you named the contained]:1.0
+* docker run -p 8000:8000 [whatever you named the container]:1.0
 
 Using browser type :
 
@@ -28,7 +28,7 @@ to protect user data first you will need to be logged in to view.
 
 # **important**
 To Log-in you will need to user below details:
-username:Account_manage01   
+username:Account_manager01   
 password:manager123
 
 or 
